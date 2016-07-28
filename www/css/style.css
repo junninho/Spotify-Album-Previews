@@ -1,0 +1,75 @@
+/* Empty. Add your own CSS if you like */
+body {
+    padding: 20px;
+}
+
+#search-form, .form-control {
+    margin-bottom: 20px;
+}
+
+.cover {
+    width: 230px;
+    height: 230px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    margin-bottom: 12px;
+}
+
+.cover:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.cover.playing {
+    border: 5px solid #e45343;
+}
+
+p {
+    text-align: center;
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: sans-serif;
+}
+
+.scroll-content {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+ion-pane {
+    background-image: url("http://www.traemcneely.com/wp-content/uploads/2011/08/wpid-000022971.jpg");
+
+}
+
+.bar.bar-stable {
+    background-color: transparent;
+}
+
+.bar.bar-stable .title  {
+    color: yellow;
+    text-align: center;
+    font-weight: bolder;
+}
+
+
+label.item.item-input {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+input, textarea{
+    color: #FDE000;
+}
+
+textarea:focus, input:focus {
+    color: #FDE000;
+}
+
+#query {
+    color: yellow;
+}
+
+h1 {
+    text-align: center;
+}

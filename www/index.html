@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <title></title>
+
+  <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+  <!-- ionic/angularjs js -->
+  <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+  <!-- cordova script (this will be a 404 during development) -->
+  <script src="cordova.js"></script>
+
+  <!-- your app's js -->
+  <script src="js/app.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+</head>
+
+<body ng-app="starter">
+
+  <ion-pane>
+    <ion-header-bar class="bar-stable">
+      <h1 class="title">Album Search</h1>
+    </ion-header-bar>
+    <ion-content>
+      <div class="container">
+        <p>Type an Artist&apos;s Name or Album Title and Submit. <br> Then, click on any albums from the results to play 30 seconds of its first track.</p>
+        <form id="search-form">
+          <label class="item item-input">
+            <i class="icon ion-search placeholder-icon"></i>
+            <input id="query" type="search" placeholder="Search an Artist">
+          </label>
+        </form>
+        <div id="results"></div>
+      </div>
+      <script id="results-template" type="text/x-handlebars-template">
+        {{#each albums.items}}
+        <div style="background-image:url({{images.0.url}})" data-album-id="{{id}}" class="cover"></div>
+        {{/each}}
+      </script>
+    </ion-content>
+  </ion-pane>
+</body>
+
+</html>
